@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.sen.test</groupId>
+	<groupId>com.djcps.test</groupId>
 	<artifactId>api</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -83,19 +83,44 @@
 					</execution>
 				</executions>
 			</plugin>
+			
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+                <testFailureIgnore>true</testFailureIgnore>
+            </configuration>
+        </plugin>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19.1</version>
+        <configuration>
+          <suiteXmlFiles>
+            <file>testng-xml/testng.xml</file>
+           <file>testng-xml/CRM-testng.xml</file>
+          </suiteXmlFiles>
+          <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties>
+        </configuration>
+      </plugin>
 		</plugins>
 	</build>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.sen</groupId>
+			<groupId>com.djcps</groupId>
 			<artifactId>reportng</artifactId>
 			<version>1.1.9</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/libs/reportng-1.1.9.jar</systemPath>
 		</dependency>
 		<dependency>
-			<groupId>com.sen</groupId>
+			<groupId>com.djcps</groupId>
 			<artifactId>velocity</artifactId>
 			<version>1.7-dep</version>
 			<scope>system</scope>
