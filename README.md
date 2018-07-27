@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## 环境
 
 > 环境：httpclient+jsonpath+testng+ExtentReport(jdk8)  
@@ -110,3 +111,7 @@ username=$.username;id=$.userId
 - 支持delete，put等方法
 - 支持验证数据库
 - 待加+++++
+=======
+# Hello-World
+Hello!!!!!!!!!!!!!!!!!!!!!!
+>>>>>>> 022cd07674dd5a74a88ed4324e2a74b0f290043b
