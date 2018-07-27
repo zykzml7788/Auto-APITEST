@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <rootUrl>http://172.16.0.15:8080</rootUrl>
+    <headers>
+        <!-- 配置为自己的参数 -->
+        <header name="Content-Type" value="application/x-www-form-urlencoded;charset=UTF-8"></header>
+        <header name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"></header>
+    </headers>
+    <params>
+    </params>
+    <project_name>接口自动化测试报告demo</project_name>
+</root>

@@ -1,0 +1,35 @@
+[DEBUG] main org.apache.http.headers 2018-07-26 16:29:52 << Date: Thu, 26 Jul 2018 08:29:51 GMT  
+[DEBUG] main org.apache.http.impl.client.DefaultHttpClient 2018-07-26 16:29:52 Connection can be kept alive indefinitely  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 << "{"msg":"","code":1066,"data":[],"success":true}"  
+[DEBUG] main org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-26 16:29:52 Connection [id: 1][route: {}->http://172.16.0.15:8080] can be kept alive indefinitely  
+[DEBUG] main org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-26 16:29:52 Connection released: [id: 1][route: {}->http://172.16.0.15:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]  
+[DEBUG] main org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-26 16:29:52 Connection request: [route: {}->http://192.168.10.170][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]  
+[DEBUG] main org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-26 16:29:52 Connection leased: [id: 2][route: {}->http://192.168.10.170][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]  
+[DEBUG] main org.apache.http.impl.conn.DefaultClientConnectionOperator 2018-07-26 16:29:52 Connecting to 192.168.10.170:80  
+[DEBUG] main org.apache.http.client.protocol.RequestAddCookies 2018-07-26 16:29:52 CookieSpec selected: best-match  
+[DEBUG] main org.apache.http.client.protocol.RequestAuthCache 2018-07-26 16:29:52 Auth cache not set in the context  
+[DEBUG] main org.apache.http.client.protocol.RequestTargetAuthentication 2018-07-26 16:29:52 Target auth state: UNCHALLENGED  
+[DEBUG] main org.apache.http.client.protocol.RequestProxyAuthentication 2018-07-26 16:29:52 Proxy auth state: UNCHALLENGED  
+[DEBUG] main org.apache.http.impl.client.DefaultHttpClient 2018-07-26 16:29:52 Attempt 1 to execute request  
+[DEBUG] main org.apache.http.impl.conn.DefaultClientConnection 2018-07-26 16:29:52 Sending request: POST /djauth/new/weblogin.do HTTP/1.1  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 >> "POST /djauth/new/weblogin.do HTTP/1.1[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 >> "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 >> "Content-Type: application/x-www-form-urlencoded;charset=UTF-8[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 >> "Content-Length: 86[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 >> "Host: 192.168.10.170[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 >> "Connection: Keep-Alive[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 >> "[\r][\n]"  
+[DEBUG] main org.apache.http.headers 2018-07-26 16:29:52 >> POST /djauth/new/weblogin.do HTTP/1.1  
+[DEBUG] main org.apache.http.headers 2018-07-26 16:29:52 >> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36  
+[DEBUG] main org.apache.http.headers 2018-07-26 16:29:52 >> Content-Type: application/x-www-form-urlencoded;charset=UTF-8  
+[DEBUG] main org.apache.http.headers 2018-07-26 16:29:52 >> Content-Length: 86  
+[DEBUG] main org.apache.http.headers 2018-07-26 16:29:52 >> Host: 192.168.10.170  
+[DEBUG] main org.apache.http.headers 2018-07-26 16:29:52 >> Connection: Keep-Alive  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 >> "username=1000000&password=339b522501ca880a03acbd86943b1129&appname=DJCRM&verification="  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 << "HTTP/1.1 200 OK[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 << "Server: nginx[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 << "Date: Thu, 26 Jul 2018 08:29:52 GMT[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 << "Content-Type: text/html;charset=UTF-8[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 << "Content-Length: 102[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 << "Connection: keep-alive[\r][\n]"  
+[DEBUG] main org.apache.http.wire 2018-07-26 16:29:52 << "Accept-Charset: big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-compound_text, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp[\r][\n]"  

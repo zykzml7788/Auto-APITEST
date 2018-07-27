@@ -1,0 +1,14 @@
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-27 14:31:46 Connection 0.0.0.0:56218<->192.168.10.170:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-27 14:31:46 Connection manager shut down  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found  
+[DEBUG] main freemarker.cache 2018-07-27 14:31:46 Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"  
