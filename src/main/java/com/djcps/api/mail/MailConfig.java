@@ -31,7 +31,7 @@ public class MailConfig {
 	        passWord = properties.getProperty("mailPassword");
 	        emailForm = properties.getProperty("mailFrom");
 	        timeout = properties.getProperty("mailTimeout");
-	        personal = "张颖凯";
+	        personal = "自动化测试团队";
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
