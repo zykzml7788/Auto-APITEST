@@ -136,7 +136,7 @@ public class ApiTest extends TestBase {
 		return dataProvider.iterator();
 	}
 
-	@Test(dataProvider = "apiDatas")
+	@Test(dataProvider = "apiDatas",timeOut=3000)
 	public void apiTest(ApiDataBean apiDataBean) throws Exception {
 		ClientConnectionManager connManager = new PoolingClientConnectionManager();
 		DefaultHttpClient client = new DefaultHttpClient(connManager);
