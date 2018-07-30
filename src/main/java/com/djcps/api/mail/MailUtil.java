@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 import javax.mail.MessagingException;
@@ -15,6 +17,8 @@ import javax.mail.internet.MimeMessage;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
+
+import com.djcps.api.listeners.ExtentTestNGIReporterListener;
 
 public class MailUtil {
     private static final String HOST = MailConfig.host;
@@ -61,11 +65,11 @@ public class MailUtil {
         for(String to:toPersons) {
 	        messageHelper.setTo(to);
 	        messageHelper.setSubject(subject);
-	        String content=new MailUtil().readToString("test-output/report.html");
+	        String content=new MailUtil().readToString(ExtentTestNGIReporterListener.OUTPUT_FOLDER+ExtentTestNGIReporterListener.FILE_NAME);
 	        messageHelper.setText(html, true);
-	        File f=new File("test-output/report.html");
-	        FileSystemResource report = new FileSystemResource(f);
-	        messageHelper.addAttachment("自动化测试报告", f);
+	        File f=new File(ExtentTestNGIReporterListener.OUTPUT_FOLDER+ExtentTestNGIReporterListener.FILE_NAME);
+	        FileSystemResource report = new FileSystemResource(ExtentTestNGIReporterListener.OUTPUT_FOLDER+ExtentTestNGIReporterListener.FILE_NAME);
+	        messageHelper.addAttachment("自动化测试报告-"+new SimpleDateFormat("yyyy年MM月dd日").format(new Date()), report);
 	        mailSender.send(mimeMessage);
         }
     }
@@ -98,7 +102,7 @@ public class MailUtil {
 		String[] p= {"294725426@qq.com","zykzml7788@sina.com"};
 		String content=new MailUtil().readToString("report/html/report.html");
 		System.out.println(content);
-		m.sendMail(p,"自动化测试报告" , content);
+		m.sendMail(p,"自动化测试报告-"+new SimpleDateFormat("yyyy年MM月dd日").format(new Date()) , content);
 		System.out.println("邮件发送成功！");
 		
 	}

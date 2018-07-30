@@ -12,6 +12,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<envName>api-config.xml</envName>
 		<xmlFileName>testng-xml/testng.xml</xmlFileName>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    	<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
 	</properties>
 	<distributionManagement>
         <repository>
@@ -27,6 +30,24 @@
     </distributionManagement>
 	<build>
 		<plugins>
+		<plugin>  
+                <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-compiler-plugin</artifactId>  
+                <version>3.1</version>  
+                <configuration>  
+                    <source>1.5</source>  
+                    <target>1.5</target>  
+                    <encoding>UTF-8</encoding><!-- 指定编码格式，否则在DOS下运行mvn compile命令时会出现莫名的错误，因为系统默认使用GBK编码 -->  
+                </configuration>  
+            </plugin>  
+            <plugin>  
+                <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-resources-plugin</artifactId>  
+                <version>2.6</version>  
+                <configuration>  
+                    <encoding>UTF-8</encoding><!-- 指定编码格式，否则在DOS下运行mvn命令时当发生文件资源copy时将使用系统默认使用GBK编码 -->  
+                </configuration>  
+            </plugin> 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -106,6 +127,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.6</version>
         <configuration>
+         <argLine>-Dfile.encoding=UTF-8</argLine>
           <suiteXmlFiles>
             <file>testng-xml/testng.xml</file>
            <file>testng-xml/CRM-testng.xml</file>
