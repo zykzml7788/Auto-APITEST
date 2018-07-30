@@ -9,22 +9,28 @@ import com.aventstack.extentreports.model.TestAttribute;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.djcps.api.mail.MailUtil;
 import com.djcps.api.utils.ReportUtil;
 
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
 import java.io.File;
+import java.io.IOException;
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.*;
+
+import javax.mail.MessagingException;
 
 
 public class ExtentTestNGIReporterListener implements IReporter {
     //生成的路径以及文件名
-    private static final String OUTPUT_FOLDER = "test-output/";
-    private static final String FILE_NAME = "report_"+new SimpleDateFormat("yyyyMMdd_HH_mm_ss").format(new Date())+".html";
+    public static final String OUTPUT_FOLDER = "test-output/";
+    public static final String FILE_NAME = "report_"+new SimpleDateFormat("yyyyMMdd_HH_mm_ss").format(new Date())+".html";
 
     private ExtentReports extent;
+    private MailUtil mailSender=new MailUtil();
 
     @Override
     public void generateReport(List<XmlSuite>  xmlSuites, List<ISuite> suites, String outputDirectory) {
@@ -101,6 +107,32 @@ public class ExtentTestNGIReporterListener implements IReporter {
 
         }
         extent.flush();
+        try {
+			Thread.currentThread().sleep(1000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+        String content="\r\n" + 
+        		"<html>\r\n" + 
+        		"<head>自动化测试报告生成通知</head>\r\n" + 
+        		"<body>\r\n" + 
+        		"	<h1>自动化测试报告已经生成,请查看附件！</h1>\r\n" + 
+        		"</body>\r\n" + 
+        		"</html>\r\n" + 
+        		"";
+		String[] to={"zykzml7788@sina.com"};
+		try {
+			mailSender.sendMail(to, new SimpleDateFormat("yyyy年MM月dd日").format(new Date())+"自动化测试报告", content);
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("邮件发送成功");
+		
     }
 
     private void init() {

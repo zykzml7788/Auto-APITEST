@@ -5,7 +5,9 @@ import com.djcps.api.beans.ApiDataBean;
 import com.djcps.api.configs.ApiConfig;
 import com.djcps.api.excepions.ErrorRespStatusException;
 import com.djcps.api.listeners.AutoTestListener;
+import com.djcps.api.listeners.ExtentTestNGIReporterListener;
 import com.djcps.api.listeners.RetryListener;
+import com.djcps.api.mail.MailUtil;
 import com.djcps.api.utils.*;
 
 import org.apache.http.Header;
@@ -73,6 +75,7 @@ public class ApiTest extends TestBase {
 
 	private static HttpClient client;
 	private static Logger logger=Logger.getLogger(ApiTest.class);
+	private static MailUtil mailSender=new MailUtil();
 	/**
 	 * 初始化测试数据
 	 *
@@ -207,6 +210,9 @@ public class ApiTest extends TestBase {
 
 		// 对返回结果进行提取保存。
 		saveResult(responseData, apiDataBean.getSave());
+		//发送邮件.
+		
+		
 	}
 
 	private String buildRequestParam(ApiDataBean apiDataBean) {
