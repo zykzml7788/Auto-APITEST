@@ -1,35 +1,34 @@
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:40:54 << Content-Disposition: inline;filename=f.txt  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.client.DefaultHttpClient 2018-07-31 11:40:54 Connection can be kept alive indefinitely  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:40:54 << "{"data":{"url":"http://192.168.10.201?oncetoken=7ecf563b-8572-4bac-a0f9-fccbbc60893d"},"success":true}"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection [id: 2][route: {}->http://192.168.10.170] can be kept alive indefinitely  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection released: [id: 2][route: {}->http://192.168.10.170][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 TemplateLoader.findTemplateSource("index_en.ftl"): Not found  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 TemplateLoader.findTemplateSource("index.ftl"): Found  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/index.ftl"  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 TemplateLoader.findTemplateSource("head_en.ftl"): Not found  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 TemplateLoader.findTemplateSource("head.ftl"): Found  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/head.ftl"  
-[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection manager is shutting down  
-[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection manager shut down  
-[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection manager is shutting down  
-[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:40:54 Connection 0.0.0.0:59482<->172.16.0.15:8080 closed  
-[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:40:54 Connection 0.0.0.0:59482<->172.16.0.15:8080 closed  
-[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection manager shut down  
-[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection manager is shutting down  
-[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:40:54 Connection 0.0.0.0:59484<->192.168.10.170:80 closed  
-[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:40:54 Connection 0.0.0.0:59484<->192.168.10.170:80 closed  
-[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection manager shut down  
-[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection manager is shutting down  
-[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:40:54 Connection 0.0.0.0:59483<->172.16.0.15:8080 closed  
-[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:40:54 Connection 0.0.0.0:59483<->172.16.0.15:8080 closed  
-[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:40:54 Connection manager shut down  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 TemplateLoader.findTemplateSource("nav_en.ftl"): Not found  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 TemplateLoader.findTemplateSource("nav.ftl"): Found  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found  
-[DEBUG] main freemarker.cache 2018-07-31 11:40:54 Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:58:52 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:58:52 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:58:52 Connection 0.0.0.0:60066<->172.16.0.15:8080 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:58:52 Connection 0.0.0.0:60066<->172.16.0.15:8080 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:58:52 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:58:52 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:58:52 Connection 0.0.0.0:60068<->192.168.10.170:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:58:52 Connection 0.0.0.0:60068<->192.168.10.170:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:58:52 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:58:52 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:58:52 Connection 0.0.0.0:60067<->172.16.0.15:8080 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:58:52 Connection 0.0.0.0:60067<->172.16.0.15:8080 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:58:52 Connection manager shut down  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 TemplateLoader.findTemplateSource("nav_en.ftl"): Not found  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 TemplateLoader.findTemplateSource("nav.ftl"): Found  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.  
+[DEBUG] main freemarker.cache 2018-07-31 11:58:52 TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found  
