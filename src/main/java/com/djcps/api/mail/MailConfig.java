@@ -22,6 +22,7 @@ public class MailConfig {
 
     	properties=new Properties();
     	InputStream inputstream=MailConfig.class.getClassLoader().getResourceAsStream(MailConfigFile);
+    	System.out.println(inputstream);
     	try {
     		if(inputstream != null) {
     			properties.load(inputstream);
