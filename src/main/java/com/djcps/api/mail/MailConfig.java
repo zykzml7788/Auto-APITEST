@@ -23,7 +23,12 @@ public class MailConfig {
     	properties=new Properties();
     	InputStream inputstream=MailConfig.class.getClassLoader().getResourceAsStream(MailConfigFile);
     	try {
-			properties.load(inputstream);
+    		if(inputstream != null) {
+    			properties.load(inputstream);
+    		}else {
+    			System.out.println("对象为空");
+    		}
+			
 			inputstream.close();
 	    	host=properties.getProperty("mailHost");
 	    	port = Integer.parseInt(properties.getProperty("mailPort"));
