@@ -1,37 +1,37 @@
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.client.DefaultHttpClient 2018-07-31 10:11:43 Attempt 1 to execute request  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 10:11:43 Sending request: POST /cscl/api/finance/getUserBalance.do HTTP/1.1  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 >> "POST /cscl/api/finance/getUserBalance.do HTTP/1.1[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 >> "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 >> "Content-Type: application/x-www-form-urlencoded;charset=UTF-8[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 >> "Content-Length: 0[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 >> "Host: 172.16.0.15:8080[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 >> "Connection: Keep-Alive[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 >> "[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 >> POST /cscl/api/finance/getUserBalance.do HTTP/1.1  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 >> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 >> Content-Type: application/x-www-form-urlencoded;charset=UTF-8  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 >> Content-Length: 0  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 >> Host: 172.16.0.15:8080  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 >> Connection: Keep-Alive  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 << "HTTP/1.1 200 [\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 << "Content-Disposition: inline;filename=f.txt[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 << "Content-Type: application/json;charset=UTF-8[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 << "Content-Length: 47[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 << "Date: Tue, 31 Jul 2018 02:11:39 GMT[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 << "[\r][\n]"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 10:11:43 Receiving response: HTTP/1.1 200   
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 << HTTP/1.1 200   
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 << Content-Disposition: inline;filename=f.txt  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 << Content-Type: application/json;charset=UTF-8  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 << Content-Length: 47  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 10:11:43 << Date: Tue, 31 Jul 2018 02:11:39 GMT  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.client.DefaultHttpClient 2018-07-31 10:11:43 Connection can be kept alive indefinitely  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 10:11:43 << "{"msg":"","code":1066,"data":[],"success":true}"  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 10:11:43 Connection [id: 1][route: {}->http://172.16.0.15:8080] can be kept alive indefinitely  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 10:11:43 Connection released: [id: 1][route: {}->http://172.16.0.15:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 10:11:43 Connection request: [route: {}->http://192.168.10.170][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 10:11:43 Connection leased: [id: 2][route: {}->http://192.168.10.170][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.DefaultClientConnectionOperator 2018-07-31 10:11:43 Connecting to 192.168.10.170:80  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.client.protocol.RequestAddCookies 2018-07-31 10:11:43 CookieSpec selected: best-match  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.client.protocol.RequestAuthCache 2018-07-31 10:11:43 Auth cache not set in the context  
-[DEBUG] TestNGInvoker-apiTest() org.apache.http.client.protocol.RequestTargetAuthentication 2018-07-31 10:11:43 Target auth state: UNCHALLENGED  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.client.DefaultHttpClient 2018-07-31 11:07:04 Attempt 1 to execute request  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:07:04 Sending request: POST /cscl/api/finance/getUserBalance.do HTTP/1.1  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 >> "POST /cscl/api/finance/getUserBalance.do HTTP/1.1[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 >> "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 >> "Content-Type: application/x-www-form-urlencoded;charset=UTF-8[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 >> "Content-Length: 0[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 >> "Host: 172.16.0.15:8080[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 >> "Connection: Keep-Alive[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 >> "[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 >> POST /cscl/api/finance/getUserBalance.do HTTP/1.1  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 >> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 >> Content-Type: application/x-www-form-urlencoded;charset=UTF-8  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 >> Content-Length: 0  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 >> Host: 172.16.0.15:8080  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 >> Connection: Keep-Alive  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 << "HTTP/1.1 200 [\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 << "Content-Disposition: inline;filename=f.txt[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 << "Content-Type: application/json;charset=UTF-8[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 << "Content-Length: 47[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 << "Date: Tue, 31 Jul 2018 03:07:01 GMT[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 << "[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.DefaultClientConnection 2018-07-31 11:07:04 Receiving response: HTTP/1.1 200   
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 << HTTP/1.1 200   
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 << Content-Disposition: inline;filename=f.txt  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 << Content-Type: application/json;charset=UTF-8  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 << Content-Length: 47  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.headers 2018-07-31 11:07:04 << Date: Tue, 31 Jul 2018 03:07:01 GMT  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.client.DefaultHttpClient 2018-07-31 11:07:04 Connection can be kept alive indefinitely  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-07-31 11:07:04 << "{"msg":"","code":1066,"data":[],"success":true}"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:07:04 Connection [id: 1][route: {}->http://172.16.0.15:8080] can be kept alive indefinitely  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:07:04 Connection released: [id: 1][route: {}->http://172.16.0.15:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:07:04 Connection request: [route: {}->http://192.168.10.170][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-07-31 11:07:04 Connection leased: [id: 2][route: {}->http://192.168.10.170][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.DefaultClientConnectionOperator 2018-07-31 11:07:04 Connecting to 192.168.10.170:80  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.client.protocol.RequestAddCookies 2018-07-31 11:07:04 CookieSpec selected: best-match  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.client.protocol.RequestAuthCache 2018-07-31 11:07:04 Auth cache not set in the context  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.client.protocol.RequestTargetAuthentication 2018-07-31 11:07:04 Target auth state: UNCHALLENGED  

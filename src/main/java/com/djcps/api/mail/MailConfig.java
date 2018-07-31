@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Properties;
 
 public class MailConfig {
-	private static final String MailConfigFile="mailConfig.properties";
+	private static final String MailConfigFile="mailconfig.properties";
 	public static String host;
     public static Integer port;
     public static String userName;
