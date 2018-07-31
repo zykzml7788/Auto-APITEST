@@ -74,7 +74,7 @@ public class ApiTest extends TestBase {
 	protected List<ApiDataBean> dataList = new ArrayList<ApiDataBean>();
 
 	private static HttpClient client;
-	private static Logger logger=Logger.getLogger(ApiTest.class);
+	//private static Logger logger=Logger.getLogger(ApiTest.class);
 	private static MailUtil mailSender=new MailUtil();
 	/**
 	 * 初始化测试数据
@@ -86,7 +86,7 @@ public class ApiTest extends TestBase {
 	public void init(@Optional("api-config.xml") String envName) throws Exception {
 		String configFilePath = Paths.get(System.getProperty("user.dir"), envName).toString();
 		ReportUtil.log("api config path:" + configFilePath);
-		logger.info("api config path:" + configFilePath);
+		//logger.info("api config path:" + configFilePath);
 		apiConfig = new ApiConfig(configFilePath);
 		// 获取基础数据
 		rootUrl = apiConfig.getRootUrl();
@@ -141,13 +141,13 @@ public class ApiTest extends TestBase {
 		ClientConnectionManager connManager = new PoolingClientConnectionManager();
 		DefaultHttpClient client = new DefaultHttpClient(connManager);
 		ReportUtil.log("--- test start ---");
-		logger.debug("--- test start ---");
+		//logger.debug("--- test start ---");
 		if (apiDataBean.getSleep() > 0) {
 			// sleep休眠时间大于0的情况下进行暂停休眠
 			ReportUtil.log(String.format("sleep %s seconds",
 					apiDataBean.getSleep()));
-			logger.debug(String.format("sleep %s seconds",
-					apiDataBean.getSleep()));
+			//logger.debug(String.format("sleep %s seconds",
+					apiDataBean.getSleep();
 			Thread.sleep(apiDataBean.getSleep() * 1000);
 		}
 		String apiParam = buildRequestParam(apiDataBean);
@@ -160,12 +160,12 @@ public class ApiTest extends TestBase {
 			HttpResponse response = client.execute(method);
 			int responseStatus = response.getStatusLine().getStatusCode();
 			ReportUtil.log("返回状态码："+responseStatus);
-			logger.debug("返回状态码："+responseStatus);
+			//logger.debug("返回状态码："+responseStatus);
 			if (apiDataBean.getStatus()!= 0) {
 				Assert.assertEquals(responseStatus, apiDataBean.getStatus(),
 						"返回状态码与预期不符合!");
-				logger.debug(responseStatus+apiDataBean.getStatus()+
-						"返回状态码与预期不符合!");
+				//logger.debug(responseStatus+apiDataBean.getStatus()+
+						//"返回状态码与预期不符合!");
 			} 
 //			else {
 //				// 非2开头状态码为异常请求，抛异常后会进行重跑
@@ -203,7 +203,7 @@ public class ApiTest extends TestBase {
 		}
 		// 输出返回数据log
 		ReportUtil.log("resp:" + responseData);
-		logger.debug("resp:" + responseData);
+		//logger.debug("resp:" + responseData);
 		// 验证预期信息
 		verifyResult(responseData, apiDataBean.getVerify(),
 				apiDataBean.isContains());
@@ -240,14 +240,14 @@ public class ApiTest extends TestBase {
 		// 处理url
 		url = parseUrl(url);
 		ReportUtil.log("method=>" + method);
-		logger.debug("method=>" + method);
+		//logger.debug("method=>" + method);
 		ReportUtil.log("url=>" + url);
-		logger.debug("url=>" + url);
+		//logger.debug("url=>" + url);
 		if(param.equals("")){
 			ReportUtil.log("param=>空");
 		}else{
 			ReportUtil.log("param=>" + param.replace("\r\n", "").replace("\n", ""));
-			logger.debug("param=>" + param.replace("\r\n", "").replace("\n", ""));
+			//logger.debug("param=>" + param.replace("\r\n", "").replace("\n", ""));
 		}
 		//upload表示上传，也是使用post进行请求
 		if ("post".equalsIgnoreCase(method) || "upload".equalsIgnoreCase(method)) {

@@ -9,7 +9,6 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<envName>api-config.xml</envName>
 		<xmlFileName>testng-xml/testng.xml</xmlFileName>
 		<xmlFileName>testng-xml/testng1.xml</xmlFileName>

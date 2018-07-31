@@ -14,6 +14,7 @@ import java.util.Properties;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -65,11 +66,12 @@ public class MailUtil {
         for(String to:toPersons) {
 	        messageHelper.setTo(to);
 	        messageHelper.setSubject(subject);
-	        String content=new MailUtil().readToString(ExtentTestNGIReporterListener.OUTPUT_FOLDER+ExtentTestNGIReporterListener.FILE_NAME);
 	        messageHelper.setText(html, true);
 	        File f=new File(ExtentTestNGIReporterListener.OUTPUT_FOLDER+ExtentTestNGIReporterListener.FILE_NAME);
-	        FileSystemResource report = new FileSystemResource(ExtentTestNGIReporterListener.OUTPUT_FOLDER+ExtentTestNGIReporterListener.FILE_NAME);
-	        messageHelper.addAttachment("自动化测试报告-"+new SimpleDateFormat("yyyy年MM月dd日").format(new Date()), report);
+	        String filepath=f.getAbsolutePath();
+	        FileSystemResource report = new FileSystemResource(f);
+	        System.out.println(report.getFilename());
+	        messageHelper.addAttachment("自动化测试报告-"+new SimpleDateFormat("yyyy年MM月dd日").format(new Date())+".htm", report);
 	        mailSender.send(mimeMessage);
         }
     }
@@ -99,10 +101,9 @@ public class MailUtil {
    
     public static void main(String[] args) throws MessagingException, IOException {
 		MailUtil m=new MailUtil();
-		String[] p= {"294725426@qq.com","zykzml7788@sina.com"};
-		String content=new MailUtil().readToString("report/html/report.html");
-		System.out.println(content);
-		m.sendMail(p,"自动化测试报告-"+new SimpleDateFormat("yyyy年MM月dd日").format(new Date()) , content);
+		String[] p= {"zykzml7788@sina.com"};
+		String content="本次自动化测试报告已生成，见附件：";
+		m.sendMail(p,"自动化测试报告" , content);
 		System.out.println("邮件发送成功！");
 		
 	}
