@@ -13,9 +13,11 @@ import com.djcps.api.utils.*;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.CookieStore;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.*;
 import org.apache.http.conn.ClientConnectionManager;
+import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.entity.mime.MultipartEntity;
@@ -71,9 +73,11 @@ public class ApiTest extends TestBase {
 	/**
 	 * 所有api测试用例数据
 	 */
+	private static CookieStore cookieStore;
 	protected List<ApiDataBean> dataList = new ArrayList<ApiDataBean>();
 
 	private static HttpClient client;
+	
 	//private static Logger logger=Logger.getLogger(ApiTest.class);
 	private static MailUtil mailSender=new MailUtil();
 	/**
@@ -140,6 +144,7 @@ public class ApiTest extends TestBase {
 	public void apiTest(ApiDataBean apiDataBean) throws Exception {
 		ClientConnectionManager connManager = new PoolingClientConnectionManager();
 		DefaultHttpClient client = new DefaultHttpClient(connManager);
+		
 		ReportUtil.log("--- test start ---");
 		//logger.debug("--- test start ---");
 		if (apiDataBean.getSleep() > 0) {
@@ -156,8 +161,12 @@ public class ApiTest extends TestBase {
 				apiDataBean.getMethod(), apiParam);
 		String responseData;
 		try {
+			client.setCookieStore(cookieStore);
 			// 执行
 			HttpResponse response = client.execute(method);
+			//获取响应头
+			cookieStore= client.getCookieStore();
+			List<Cookie> cookies = cookieStore.getCookies();
 			int responseStatus = response.getStatusLine().getStatusCode();
 			ReportUtil.log("返回状态码："+responseStatus);
 			//logger.debug("返回状态码："+responseStatus);

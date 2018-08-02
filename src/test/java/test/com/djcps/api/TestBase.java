@@ -87,6 +87,7 @@ public class TestBase {
 			}
 			key = prepar.split("=")[0];
 			value = prepar.split("=")[1];
+			
 			ReportUtil.log(String.format("存储%s参数，值为：%s。", key, value));
 			saveDatas.put(key, value);
 		}
@@ -218,7 +219,10 @@ public class TestBase {
 			while (m.find()) {
 				key = getBuildValue(json, m.group(1));
 				value = getBuildValue(json, m.group(2));
-
+				//处理token
+				if(value.contains("oncetoken=")) {
+					value=value.split("oncetoken=")[1];
+				}
 				ReportUtil.log(String.format("存储公共参数   %s值为：%s.", key, value));
 				saveDatas.put(key, value);
 			}
