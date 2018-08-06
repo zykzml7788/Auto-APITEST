@@ -121,7 +121,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
         		"</body>\r\n" + 
         		"</html>\r\n" + 
         		"";
-		String[] to={"m17826826147@163.com"};
+		String[] to={"zhangyingkai@djcps.com"};
 		try {
 			mailSender.sendMail(to, new SimpleDateFormat("yyyy年MM月dd日").format(new Date())+"自动化测试报告", content);
 		} catch (MessagingException e) {
