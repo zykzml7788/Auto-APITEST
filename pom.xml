@@ -11,7 +11,6 @@
 	<properties>
 		<envName>api-config.xml</envName>
 		<xmlFileName>testng-xml/testng.xml</xmlFileName>
-		<xmlFileName>testng-xml/testng1.xml</xmlFileName>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     	<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
@@ -130,7 +129,6 @@
          <argLine>-Dfile.encoding=UTF-8</argLine>
           <suiteXmlFiles>
             <file>testng-xml/testng.xml</file>
-           <file>testng-xml/CRM-testng.xml</file>
           </suiteXmlFiles>
           <properties>
             <property>
