@@ -42,6 +42,7 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.regex.Matcher;
 
+@SuppressWarnings("unused")
 @Listeners({ AutoTestListener.class, RetryListener.class })
 public class ApiTest extends TestBase { 
 
@@ -79,6 +80,7 @@ public class ApiTest extends TestBase {
 	private static HttpClient client;
 	
 	//private static Logger logger=Logger.getLogger(ApiTest.class);
+	@SuppressWarnings("unused")
 	private static MailUtil mailSender=new MailUtil();
 	/**
 	 * 初始化测试数据
@@ -166,7 +168,7 @@ public class ApiTest extends TestBase {
 			HttpResponse response = client.execute(method);
 			//获取响应头
 			cookieStore= client.getCookieStore();
-			List<Cookie> cookies = cookieStore.getCookies();
+			//List<Cookie> cookies = cookieStore.getCookies();
 			int responseStatus = response.getStatusLine().getStatusCode();
 			ReportUtil.log("返回状态码："+responseStatus);
 			//logger.debug("返回状态码："+responseStatus);
@@ -320,6 +322,7 @@ public class ApiTest extends TestBase {
 	 */
 	private HttpEntity parseEntity(String param,boolean formData) throws UnsupportedEncodingException{
 		if(formData){
+			@SuppressWarnings("unchecked")
 			Map<String, String> paramMap = JSON.parseObject(param,
 					HashMap.class);
 			MultipartEntity multiEntity = new MultipartEntity();
