@@ -1,36 +1,38 @@
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found  
-[DEBUG] main freemarker.cache 2018-08-07 09:17:41 TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-08-07 10:11:17 << "[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-08-07 10:11:17 << "0[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.wire 2018-08-07 10:11:17 << "[\r][\n]"  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection [id: 26][route: {}->http://192.168.10.201] can be kept alive indefinitely  
+[DEBUG] TestNGInvoker-apiTest() org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection released: [id: 26][route: {}->http://192.168.10.201][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58111<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58111<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58122<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58122<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58121<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58121<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58120<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58120<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58118<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58118<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58116<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58116<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58114<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58114<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager is shutting down  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58113<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.DefaultClientConnection 2018-08-07 10:11:17 Connection 0.0.0.0:58113<->192.168.10.201:80 closed  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager shut down  
+[DEBUG] Finalizer org.apache.http.impl.conn.PoolingClientConnectionManager 2018-08-07 10:11:17 Connection manager is shutting down  
