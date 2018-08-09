@@ -28,17 +28,7 @@
         </snapshotRepository>
     </distributionManagement>
 	<build>
-		<plugins>
-		<plugin>  
-                <groupId>org.apache.maven.plugins</groupId>  
-                <artifactId>maven-compiler-plugin</artifactId>  
-                <version>3.1</version>  
-                <configuration>  
-                    <source>1.5</source>  
-                    <target>1.5</target>  
-                    <encoding>UTF-8</encoding><!-- 指定编码格式，否则在DOS下运行mvn compile命令时会出现莫名的错误，因为系统默认使用GBK编码 -->  
-                </configuration>  
-            </plugin>  
+		<plugins> 
             <plugin>  
                 <groupId>org.apache.maven.plugins</groupId>  
                 <artifactId>maven-resources-plugin</artifactId>  
@@ -60,21 +50,7 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.5</version>
-				<configuration>
-					<properties>
-						<property>
-							<name>usedefaultlisteners</name>
-							<value>false</value>
-						</property>
-					</properties>
-					<workingDirectory>target/</workingDirectory>
-					<!-- <forkMode>always</forkMode> -->
-				</configuration>
-			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -116,29 +92,7 @@
 				</executions>
 			</plugin>
 		
-        <plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-surefire-plugin</artifactId>
-			<version>2.7.1</version>
-			</plugin>
-        <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.6</version>
-        <configuration>
-         <argLine>-Dfile.encoding=UTF-8</argLine>
-          <suiteXmlFiles>
-            <file>testng-xml/testng.xml</file>
-          </suiteXmlFiles>
-          <properties>
-            <property>
-              <name>suitethreadpoolsize</name>
-              <value>2</value>
-            </property>
-          </properties>
-          <testFailureIgnore>true</testFailureIgnore>
-        </configuration>
-      </plugin>
+        
 		</plugins>
 	</build>
 
