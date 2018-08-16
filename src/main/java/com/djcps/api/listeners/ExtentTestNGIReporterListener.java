@@ -17,7 +17,6 @@ import org.testng.xml.XmlSuite;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -32,7 +31,8 @@ public class ExtentTestNGIReporterListener implements IReporter {
     private ExtentReports extent;
     private MailUtil mailSender=new MailUtil();
 
-    @Override
+    @SuppressWarnings("static-access")
+	@Override
     public void generateReport(List<XmlSuite>  xmlSuites, List<ISuite> suites, String outputDirectory) {
         init();
         boolean createSuiteNode = false;
@@ -227,7 +227,8 @@ public class ExtentTestNGIReporterListener implements IReporter {
                     test.log(status, "Test " + status.toString().toLowerCase() + "ed");
                 }
                 //设置log的时间，根据ReportUtil.log()的特定格式进行处理获取数据log的时间
-                Iterator logIterator = test.getModel().getLogContext().getIterator();
+                @SuppressWarnings("rawtypes")
+				Iterator logIterator = test.getModel().getLogContext().getIterator();
                 while (logIterator.hasNext()){
                     Log log = (Log) logIterator.next();
                     String details = log.getDetails();

@@ -1,0 +1,36 @@
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"  
+[DEBUG] main freemarker.cache 2018-08-10 11:34:16 Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.  

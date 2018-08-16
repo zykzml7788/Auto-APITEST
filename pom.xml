@@ -48,6 +48,7 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>${xmlFileName}</suiteXmlFile>
 					</suiteXmlFiles>
+					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>
 			</plugin>
 			
