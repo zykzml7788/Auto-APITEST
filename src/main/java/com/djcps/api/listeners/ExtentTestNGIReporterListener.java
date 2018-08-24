@@ -10,6 +10,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.djcps.api.mail.MailUtil;
+import com.djcps.api.utils.CleanFileUtil;
 import com.djcps.api.utils.ReportUtil;
 
 import org.testng.*;
@@ -27,7 +28,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
     //生成的路径以及文件名
     public static final String OUTPUT_FOLDER = "test-output/";
     public static final String FILE_NAME = "report_"+new SimpleDateFormat("yyyyMMdd_HH_mm_ss").format(new Date())+".html";
-
+    private CleanFileUtil cleanUtil=new CleanFileUtil();;
     private ExtentReports extent;
     private MailUtil mailSender=new MailUtil();
 
@@ -107,6 +108,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
 
         }
         extent.flush();
+        cleanUtil.clean("test-output/",10);
         try {
 			Thread.currentThread().sleep(1000);
 		} catch (InterruptedException e1) {

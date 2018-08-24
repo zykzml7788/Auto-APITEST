@@ -1,11 +1,16 @@
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found  
-[DEBUG] main freemarker.cache 2018-08-10 11:34:16 Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/D:/localRepository/com/aventstack/extentreports/3.0.3/extentreports-3.0.3.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 15:21:12 文件:test-output\report_20180823_15_16_15.html  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 15:21:12 文件:test-output\report_20180824_15_20_23.html  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 15:21:12 文件夹：test-output\接口自动化测试  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 15:21:12 临时图片删除任务启动...  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 15:21:12 删除图片文件：test-output\report_20180816_10_31_18.html  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 15:21:12 临时图片删除任务启动...  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 15:21:12 删除图片文件：test-output\report_20180814_10_49_00.html  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 15:23:40 检查目录ing...  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 15:23:40 文件:test-output\report_20180824_15_22_57.html  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 17:08:08 检查目录ing...  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 17:08:08 文件:test-output\report_20180824_15_22_57.html  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 17:08:08 文件:test-output\report_20180824_17_07_18.html  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 17:20:12 检查目录ing...  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 17:20:12 文件:test-output\report_20180824_15_22_57.html  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 17:20:12 文件:test-output\report_20180824_17_07_18.html  
+[INFO] main com.djcps.api.utils.CleanFileUtil 2018-08-24 17:20:12 文件:test-output\report_20180824_17_19_25.html  

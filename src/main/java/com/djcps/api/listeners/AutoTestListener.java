@@ -8,10 +8,13 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
+import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+@SuppressWarnings("unused")
 public class AutoTestListener extends TestListenerAdapter {
+	@SuppressWarnings("unused")
 	private static Logger logger = Logger.getLogger(AutoTestListener.class);
 	@Override
 	public void onTestSuccess(ITestResult tr) {
@@ -21,6 +24,9 @@ public class AutoTestListener extends TestListenerAdapter {
 	}
 
 	public void onTestFailure(ITestResult tr) {
+		if(TestngRetry.retryCount==TestngRetry.maxRetryCount) {
+			TestngRetry.resetRetryCount();
+		}
 		saveResult(tr);
 		super.onTestFailure(tr);
 		
@@ -45,49 +51,21 @@ public class AutoTestListener extends TestListenerAdapter {
 	@Override
 	public void onFinish(ITestContext testContext) {
 		super.onFinish(testContext);
+		//失败后重跑，记录最后一次结果
+        Iterator<ITestResult> listOfFailedTests = testContext.getFailedTests().getAllResults().iterator(); 
+        while (listOfFailedTests.hasNext()) { 
+             ITestResult failedTest = listOfFailedTests.next(); 
+             ITestNGMethod method = failedTest.getMethod(); 
+             if (testContext.getFailedTests().getResults(method).size() > 1) { 
+                 listOfFailedTests.remove(); 
+             } else { 
+                 if (testContext.getPassedTests().getResults(method).size() > 0) { 
+                     listOfFailedTests.remove(); 
+                 } 
+             } 
+         }
+        
 
-		// List of test results which we will delete later
-		ArrayList<ITestResult> testsToBeRemoved = new ArrayList<ITestResult>();
-		// collect all id's from passed test
-		Set<Integer> passedTestIds = new HashSet<Integer>();
-		for (ITestResult passedTest : testContext.getPassedTests()
-				.getAllResults()) {
-			// logger.info("PassedTests = " + passedTest.getName());
-			passedTestIds.add(getId(passedTest));
-		}
-
-		Set<Integer> failedTestIds = new HashSet<Integer>();
-		for (ITestResult failedTest : testContext.getFailedTests()
-				.getAllResults()) {
-			// logger.info("failedTest = " + failedTest.getName());
-			// id = class + method + dataprovider
-			int failedTestId = getId(failedTest);
-
-			// if we saw this test as a failed test before we mark as to be
-			// deleted
-			// or delete this failed test if there is at least one passed
-			// version
-			if (failedTestIds.contains(failedTestId)
-					|| passedTestIds.contains(failedTestId)) {
-				testsToBeRemoved.add(failedTest);
-			} else {
-				failedTestIds.add(failedTestId);
-			}
-		}
-
-		// finally delete all tests that are marked
-		for (Iterator<ITestResult> iterator =
-
-		testContext.getFailedTests().getAllResults().iterator(); iterator
-				.hasNext();) {
-			ITestResult testResult = iterator.next();
-
-			if (testsToBeRemoved.contains(testResult)) {
-				// logger.info("Remove repeat Fail Test: " +
-				// testResult.getName());
-				iterator.remove();
-			}
-		}
 
 	}
 
